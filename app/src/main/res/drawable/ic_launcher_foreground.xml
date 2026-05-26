@@ -1,0 +1,57 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Center illustration: Framed image landscapes -->
+    <path
+        android:fillColor="#93C5FD"
+        android:strokeColor="#60A5FA"
+        android:strokeWidth="1.5"
+        android:pathData="M39.5,39.5 h29 v29 h-29 z" />
+
+    <!-- Mountain shape inside -->
+    <path
+        android:fillColor="#1E3A8A"
+        android:pathData="M39.5,68 L48.5,58 L55.5,64 L62.5,55 L68.5,64 L68.5,68 Z" />
+
+    <!-- Core sun icon -->
+    <path
+        android:fillColor="#FCD34D"
+        android:pathData="M44.5,46.5 A3,3 0 1,1 50.5,46.5 A3,3 0 1,1 44.5,46.5" />
+
+    <!-- Corner Crop guides -->
+    <!-- Top-Left guide -->
+    <path
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="3.5"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M44,32 L32,32 L32,44" />
+
+    <!-- Top-Right guide -->
+    <path
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="3.5"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M64,32 L76,32 L76,44" />
+
+    <!-- Bottom-Left guide -->
+    <path
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="3.5"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M32,64 L32,76 L44,76" />
+
+    <!-- Bottom-Right guide -->
+    <path
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="3.5"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M64,76 L76,76 L76,64" />
+
+</vector>

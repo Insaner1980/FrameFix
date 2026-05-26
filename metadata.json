@@ -1,0 +1,6 @@
+{
+  "name": "FrameFix",
+  "description": "A dark, minimal, professional image framing and aspect ratio tool without stretching or distortion.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
