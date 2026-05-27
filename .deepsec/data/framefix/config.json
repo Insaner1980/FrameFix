@@ -1,0 +1,25 @@
+{
+  "priorityPaths": [
+    "app/src/main/AndroidManifest.xml",
+    "app/src/main/java/com/insaner1980/framefix/ui/HomeScreen.kt",
+    "app/src/main/java/com/insaner1980/framefix/viewmodel/EditorViewModel.kt",
+    "app/src/main/java/com/insaner1980/framefix/util/ImageUtils.kt",
+    "app/src/main/res/xml/backup_rules.xml",
+    "app/src/main/res/xml/data_extraction_rules.xml"
+  ],
+  "promptAppend": "Prioritize untrusted image URI decoding, bounded bitmap memory use, MediaStore export cleanup, backup exclusion, exported Android components, and sensitive image URI logging.",
+  "ignorePaths": [
+    "**/.build-outputs/**",
+    "**/.gradle/**",
+    "**/.kotlin/**",
+    "**/.tmp/**",
+    "**/android/**",
+    "**/build/**",
+    "**/caches/**",
+    "**/daemon/**",
+    "**/kotlin-profile/**",
+    "**/native/**",
+    "**/notifications/**",
+    "**/reports/**"
+  ]
+}

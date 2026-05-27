@@ -1,0 +1,19 @@
+# mobsfscan lukee lahdemanifestia eika nae Gradlen targetSdk=36-arvoa.
+# Siksi StrandHogg 2.0 -saanto on tassa projektissa false positive.
+ignore-rules:
+  - android_task_hijacking2
+
+ignore-paths:
+  - .deepsec
+  - .git
+  - .gradle
+  - .kotlin
+  - .sonar
+  - app/build
+  - build
+  - node_modules
+  - reports
+
+severity-filter:
+  - WARNING
+  - ERROR

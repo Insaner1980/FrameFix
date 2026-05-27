@@ -1,4 +1,5 @@
 *.iml
+/node_modules/
 .gradle
 .kotlin
 /local.properties
@@ -10,9 +11,21 @@
 /.idea/assetWizardSettings.xml
 .DS_Store
 /build
+/caches/
+/daemon/
+/kotlin-profile/
+/native/
+/notifications/
 /captures
+/reports
+/.scannerwork/
+/.sonar/
+/.tmp/
 .externalNativeBuild
 .cxx
 local.properties
 .env
 debug.keystore
+debug.keystore.base64
+*.jks
+*.keystore

@@ -1,0 +1,34 @@
+name: Android CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out sources
+        uses: actions/checkout@v6
+
+      - name: Set up JDK
+        uses: actions/setup-java@v5
+        with:
+          distribution: temurin
+          java-version: 17
+
+      - name: Set up Gradle
+        uses: gradle/actions/setup-gradle@39fdf500b386709a9a4a769f717dad447ac345b9
+        with:
+          cache-provider: basic
+
+      - name: Build debug APK
+        run: bash ./gradlew :app:assembleDebug
+
+      - name: Run unit tests
+        run: bash ./gradlew :app:testDebugUnitTest

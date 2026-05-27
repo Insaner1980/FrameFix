@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suppressions xmlns="https://jeremylong.github.io/DependencyCheck/dependency-suppression.1.4.xsd"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:schemaLocation="https://jeremylong.github.io/DependencyCheck/dependency-suppression.1.4.xsd https://dependency-check.github.io/DependencyCheck/dependency-suppression.1.4.xsd">
+    <suppress>
+        <notes><![CDATA[
+        Väärä osuma: compose-stability-runtime-android on Compose Stability Analyzerin runtime,
+        ei GitHub Enterprise Server. Dependency-Check mapittaa sen CPE:hen cpe:/a:github:github,
+        koska Maven-ryhmä alkaa muodolla com.github.
+        ]]></notes>
+        <packageUrl>pkg:maven/com.github.skydoves/compose-stability-runtime-android@0.7.4</packageUrl>
+        <cpe>cpe:/a:github:github</cpe>
+    </suppress>
+</suppressions>

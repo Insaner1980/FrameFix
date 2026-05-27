@@ -1,0 +1,64 @@
+[[PackageOverrides]]
+name = "io[.]netty:netty-(codec|codec-http|codec-http2|common|handler|handler-proxy)"
+nameIsRegex = true
+version = "4.1.110.Final"
+ecosystem = "Maven"
+vulnerability.ignore = true
+reason = "Build-tool-only dependency from Gradle verification metadata; app runtime dependencies are checked by OWASP Dependency-Check."
+
+[[PackageOverrides]]
+name = "io[.]netty:netty-(codec|codec-http|codec-http2|common|handler|handler-proxy)"
+nameIsRegex = true
+version = "4.1.93.Final"
+ecosystem = "Maven"
+vulnerability.ignore = true
+reason = "Build-tool-only dependency from Gradle verification metadata; app runtime dependencies are checked by OWASP Dependency-Check."
+
+[[PackageOverrides]]
+name = "org.apache.commons:commons-lang3"
+version = "3.16.0"
+ecosystem = "Maven"
+vulnerability.ignore = true
+reason = "Build-tool-only dependency from Gradle verification metadata; app runtime dependencies are checked by OWASP Dependency-Check."
+
+[[PackageOverrides]]
+name = "org.apache.httpcomponents:httpclient"
+version = "4.5.6"
+ecosystem = "Maven"
+vulnerability.ignore = true
+reason = "Build-tool-only dependency from Gradle verification metadata; app runtime dependencies are checked by OWASP Dependency-Check."
+
+[[PackageOverrides]]
+name = "org.bitbucket.b_c:jose4j"
+version = "0.9.5"
+ecosystem = "Maven"
+vulnerability.ignore = true
+reason = "Build-tool-only dependency from Gradle verification metadata; app runtime dependencies are checked by OWASP Dependency-Check."
+
+[[PackageOverrides]]
+name = "org.bouncycastle:bcpkix-jdk18on"
+version = "1.79"
+ecosystem = "Maven"
+vulnerability.ignore = true
+reason = "Build-tool-only dependency from Gradle verification metadata; app runtime dependencies are checked by OWASP Dependency-Check."
+
+[[PackageOverrides]]
+name = "org.bouncycastle:bcprov-jdk18on"
+version = "1.79"
+ecosystem = "Maven"
+vulnerability.ignore = true
+reason = "Build-tool-only dependency from Gradle verification metadata; app runtime dependencies are checked by OWASP Dependency-Check."
+
+[[PackageOverrides]]
+name = "org.bouncycastle:bcprov-jdk18on"
+version = "1.81"
+ecosystem = "Maven"
+vulnerability.ignore = true
+reason = "Build-tool-only dependency from Gradle verification metadata; app runtime dependencies are checked by OWASP Dependency-Check."
+
+[[PackageOverrides]]
+name = "org.jdom:jdom2"
+version = "2.0.6"
+ecosystem = "Maven"
+vulnerability.ignore = true
+reason = "Build-tool-only dependency from Gradle verification metadata; app runtime dependencies are checked by OWASP Dependency-Check."

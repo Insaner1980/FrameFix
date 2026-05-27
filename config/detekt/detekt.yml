@@ -1,0 +1,28 @@
+complexity:
+  CyclomaticComplexMethod:
+    excludes:
+      - '**/ui/**'
+  LongMethod:
+    excludes:
+      - '**/ui/**'
+  TooManyFunctions:
+    excludes:
+      - '**/ui/**'
+      - '**/src/test/**'
+
+naming:
+  FunctionNaming:
+    ignoreAnnotated:
+      - 'Composable'
+
+style:
+  MagicNumber:
+    excludes:
+      - '**/model/EditorModels.kt'
+      - '**/src/test/**'
+      - '**/ui/**'
+    ignorePropertyDeclaration: true
+    ignoreCompanionObjectPropertyDeclaration: true
+    ignoreEnums: true
+  MaxLineLength:
+    active: false

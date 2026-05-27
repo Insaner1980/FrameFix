@@ -1,0 +1,21 @@
+{
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "deepsec": "deepsec",
+    "deepsec:scan": "deepsec scan --project-id framefix",
+    "deepsec:scan:custom": "deepsec scan --project-id framefix --matchers android-exported-component,fileprovider-broad-path,android-uri-share-without-clipdata,media-store-image-write,sensitive-android-log",
+    "deepsec:process": "deepsec process --project-id framefix",
+    "deepsec:revalidate": "deepsec revalidate --project-id framefix --min-severity HIGH",
+    "deepsec:export": "deepsec export --project-id framefix --format md-dir --out ./findings",
+    "deepsec:report": "pnpm run deepsec:scan && pnpm run deepsec:process && pnpm run deepsec:export",
+    "deepsec:report:custom": "pnpm run deepsec:scan:custom && pnpm run deepsec:process && pnpm run deepsec:export"
+  },
+  "dependencies": {
+    "deepsec": "2.0.10"
+  },
+  "devDependencies": {
+    "@types/node": "^25.9.1",
+    "typescript": "^6.0.3"
+  }
+}

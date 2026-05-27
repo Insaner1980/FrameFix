@@ -1,0 +1,56 @@
+rules:
+  - id: framefix-android-allowbackup-enabled
+    languages:
+      - xml
+    severity: ERROR
+    message: android:allowBackup="true" sallii sovellusdatan varmuuskopioinnin. Pida backup pois paalta, ellei palautustarvetta ole erikseen dokumentoitu.
+    patterns:
+      - pattern: |
+          <application ... android:allowBackup="true" ...>
+
+  - id: framefix-android-cleartext-enabled
+    languages:
+      - xml
+    severity: ERROR
+    message: android:usesCleartextTraffic="true" sallii selkokielisen HTTP-liikenteen. FrameFixissa ei ole verkkopinoa, joten asetusta ei pideta sallittuna.
+    patterns:
+      - pattern: |
+          <application ... android:usesCleartextTraffic="true" ...>
+
+  - id: framefix-restricted-android-permission
+    languages:
+      - xml
+    severity: ERROR
+    message: FrameFix kayttaa Androidin media picker -polkua eika tarvitse kamera- tai tallennusoikeuksia.
+    patterns:
+      - pattern-either:
+          - pattern: |
+              <uses-permission android:name="android.permission.CAMERA" .../>
+          - pattern: |
+              <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" .../>
+          - pattern: |
+              <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" .../>
+          - pattern: |
+              <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" .../>
+          - pattern: |
+              <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" .../>
+
+  - id: framefix-fileprovider-broad-path
+    languages:
+      - xml
+    severity: ERROR
+    message: FileProvider-polku on liian levea. Kayta vain rajattuja appin omistamia alihakemistoja.
+    patterns:
+      - pattern-either:
+          - pattern: |
+              <root-path ...>
+          - pattern: |
+              <external-path ...>
+          - pattern: |
+              <files-path ... path="." ...>
+          - pattern: |
+              <cache-path ... path="." ...>
+          - pattern: |
+              <external-files-path ... path="." ...>
+          - pattern: |
+              <external-cache-path ... path="." ...>
